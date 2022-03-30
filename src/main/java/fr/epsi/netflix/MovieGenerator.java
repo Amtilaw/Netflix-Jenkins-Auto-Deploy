@@ -22,7 +22,7 @@ public class MovieGenerator {
             HtmlFactory htmlFactory = new HtmlFactory();
             String html = htmlFactory.generateHtml(movies);
 
-            Path folderOut = Path.of("out");
+            Path folderOut = Paths.get("out");
             if(!Files.exists(folderOut)){
                 Files.createDirectory(folderOut);
             }
